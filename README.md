@@ -29,6 +29,12 @@ It allows multiple users to edit the same document in real time, with changes sy
 - [MongoDB Atlas](https://www.mongodb.com/atlas)
 
 ---
+## 📷 Screenshots
+
+> Replace `assets/screenshot1.png` with your actual screenshot paths.
+
+**Editor Interface**
+![Editor Interface](./Client/Screenshot.png)
 
 ## 🚀 Local Development
 
@@ -36,5 +42,39 @@ Follow these steps to run the project locally.
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/doc_editor.git
+git clone https://github.com/vaishnaviparabkar90/Doc_Editor.git
 cd doc_editor
+```
+
+### 2️⃣ Install dependencies
+Backend
+```bash
+cd server
+npm install
+```
+Frontend:
+```bash
+cd ../client
+npm install
+```
+### 3️⃣ Set up environment variables
+Create a .env file inside the server folder:
+env
+```bash
+MONGO_URI=your_mongodb_atlas_connection_string
+PORT=5000
+```
+### 4️⃣ Start the backend server
+```bash
+cd server
+npm run dev 
+```
+Server will run on:
+http://localhost:5000
+ ### 5️⃣ Start the frontend app
+```bash
+cd ../client
+npm start
+```
+Frontend will run on:
+http://localhost:3000
